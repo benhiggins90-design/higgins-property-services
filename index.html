@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <img src="images/logo.jpg" style="width:200px;"> 
-   <margin-bottom:15px;">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Higgins Property Services | Kent & London</title>
 
   <meta name="description" content="Higgins Property Services provides window cleaning, gutter cleaning, fencing, repairs, removals and property management across Kent and London." />
@@ -17,44 +16,70 @@
       color: #222;
       line-height: 1.6;
     }
+
     header {
       background: #1f5f4a;
       color: #fff;
       padding: 30px 20px;
       text-align: center;
     }
+
+    header img {
+      max-width: 200px;
+      margin-bottom: 15px;
+    }
+
     header h1 {
       margin: 0;
       font-size: 32px;
     }
+
     header p {
       margin-top: 10px;
       font-size: 18px;
     }
+
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
+
     h2 {
       color: #1f5f4a;
       border-bottom: 2px solid #1f5f4a;
       padding-bottom: 5px;
     }
+
+    h3 {
+      color: #1f5f4a;
+      margin-top: 25px;
+    }
+
     .box {
       background: #fff;
       padding: 20px;
-      margin: 20px 0;
+      margin: 25px 0;
       border-radius: 6px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
+
     ul {
       list-style: none;
       padding: 0;
     }
+
     ul li {
       padding: 6px 0;
     }
+
+    img.content-image {
+      width: 100%;
+      max-width: 900px;
+      margin: 20px auto;
+      display: block;
+    }
+
     .cta {
       background: #1f5f4a;
       color: #fff;
@@ -62,16 +87,19 @@
       text-align: center;
       border-radius: 6px;
       font-size: 18px;
+      margin-top: 30px;
     }
+
     a.button {
       display: inline-block;
-      margin: 8px 10px 0 0;
+      margin: 10px 10px 0 0;
       padding: 10px 15px;
       background: #1f5f4a;
       color: #fff;
       text-decoration: none;
       border-radius: 4px;
     }
+
     footer {
       background: #222;
       color: #fff;
@@ -84,6 +112,8 @@
 <body>
 
 <header>
+  <img src="images/logo.jpg" alt="Higgins Property Services logo">
+
   <h1>Higgins Property Services</h1>
   <p>Property Maintenance, Management & Removals You Can Trust</p>
 </header>
@@ -101,9 +131,9 @@
 
   <div class="box">
     <h2>Services We Offer</h2>
-    <img src="images/services-we-offer.png"
-     alt="Services we offer"
-     style="width:100%; max-width:900px; margin:20px auto; display:block;">
+
+    <img src="images/services-we-offer.png" class="content-image" alt="Services we offer">
+
     <ul>
       <li>• Window cleaning (residential & commercial)</li>
       <li>• Gutter cleaning, fascia & soffits</li>
@@ -118,62 +148,28 @@
   </div>
 
   <div class="box">
-    <h2>Window Cleaning Prices (Guide)</h2>
+    <h2>Window Cleaning Prices</h2>
+
     <h3>Residential Window Cleaning</h3>
+    <img src="images/window-prices-houses.png" class="content-image" alt="Residential window cleaning prices">
 
-<img src="images/window-prices-houses.png"
-     alt="Residential window cleaning prices"
-     style="width:100%; max-width:900px; margin:20px auto; display:block;">
-    <p><strong>One-Off (Inside & Outside)</strong></p>
-    <p>2-Bed: £50 – £70</p>
-    <p>3-Bed: £65 – £85</p>
-    <p>4-Bed: £80 – £110</p>
-    <p>Bungalow: £45 – £65</p>
-<h3>Shop & Commercial Window Cleaning</h3>
-
-<img src="images/window-prices-shops.png"
-     alt="Shop and commercial window cleaning prices"
-     style="width:100%; max-width:900px; margin:20px auto; display:block;">
-    <p><strong>Regular – Twice Monthly (2 visits)</strong></p>
-    <p>2-Bed: £60 – £80 per month</p>
-    <p>3-Bed: £80 – £110 per month</p>
-    <p>4-Bed: £110 – £150 per month</p>
+    <h3>Shop & Commercial Window Cleaning</h3>
+    <img src="images/window-prices-shops.png" class="content-image" alt="Shop and commercial window cleaning prices">
   </div>
 
   <div class="box">
     <h2>Gutter Cleaning Prices</h2>
-    <img src="images/gutter-prices.png"
-     alt="Gutter cleaning prices"
-     style="width:100%; max-width:900px; margin:20px auto; display:block;">
-    <p>Bungalow: £50 – £70</p>
-    <p>2-Bed: £60 – £80</p>
-    <p>3-Bed: £70 – £100</p>
-    <p>4-Bed: £90 – £130</p>
+    <img src="images/gutter-prices.png" class="content-image" alt="Gutter cleaning prices">
   </div>
 
   <div class="box">
     <h2>Removals – Van & 2 People</h2>
-    <img src="images/removals-prices.png"
-     alt="Removals pricing"
-     style="width:100%; max-width:900px; margin:20px auto; display:block;">
-    <p><strong>Half Day (up to 4 hours)</strong></p>
-    <p>Kent: £220 – £280</p>
-    <p>London: £280 – £350</p>
-
-    <p><strong>Full Day (up to 8 hours)</strong></p>
-    <p>Kent: £380 – £450</p>
-    <p>London: £450 – £550</p>
+    <img src="images/removals-prices.png" class="content-image" alt="Removals pricing">
   </div>
 
   <div class="box">
     <h2>Property Management</h2>
-    <img src="images/property-management-prices.png"
-     alt="Property management prices"
-     style="width:100%; max-width:900px; margin:20px auto; display:block;">
-    <p>Key-holding: £15 – £25 per month</p>
-    <p>Property checks: £25 – £40 per visit</p>
-    <p>Meet & greet / access visits: £25 – £50</p>
-    <p>Emergency call-outs: £60 – £90</p>
+    <img src="images/property-management-prices.png" class="content-image" alt="Property management prices">
   </div>
 
   <div class="box">
@@ -186,7 +182,7 @@
   </div>
 
   <div class="cta">
-    📩 Message us today for a free quote<br />
+    📩 Message us today for a free quote<br>
     Reliable • Local • Family-Run • Kent & London
   </div>
 
@@ -198,6 +194,3 @@
 
 </body>
 </html>
-
-
-
