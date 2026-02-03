@@ -16,9 +16,19 @@ body {
 
 header {
   background: #1f5f4a;
-  color: #fff;
   padding: 30px 20px;
   text-align: center;
+}
+
+header img {
+  max-width: 220px;
+  width: 100%;
+}
+
+header p {
+  color: #fff;
+  margin-top: 15px;
+  font-size: 18px;
 }
 
 section {
@@ -114,7 +124,7 @@ img {
 <body>
 
 <header>
-  <h1>Higgins Property Services</h1>
+  <img src="Logo.jpg" alt="Higgins Property Services Logo">
   <p>Property Maintenance, Management & Removals | Kent & London</p>
 </header>
 
@@ -171,27 +181,19 @@ img {
 
   <div class="icon-buttons">
 
-    <!-- WhatsApp -->
     <a class="icon-button" href="https://wa.me/447495692457" target="_blank">
-      <svg viewBox="0 0 32 32"><path d="M16 2.7C8.6 2.7 2.7 8.6 2.7 16c0 2.6.7 5 2 7.1L2 30l7-2.6c2 .9 4.2 1.4 6.6 1.4 7.4 0 13.3-6 13.3-13.4S23.4 2.7 16 2.7z"/></svg>
       WhatsApp
     </a>
 
-    <!-- Facebook -->
     <a class="icon-button" href="https://www.facebook.com/share/1CQUxyqjvZ/" target="_blank">
-      <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.7-1.6 1.5V12H17l-.4 3h-2.6v7A10 10 0 0 0 22 12z"/></svg>
       Facebook
     </a>
 
-    <!-- Instagram -->
     <a class="icon-button" href="https://www.instagram.com/higginspropertyservices2026" target="_blank">
-      <svg viewBox="0 0 24 24"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10z"/><circle cx="12" cy="12" r="3.2"/><circle cx="17.5" cy="6.5" r="1"/></svg>
       Instagram
     </a>
 
-    <!-- Email -->
     <a class="icon-button" href="mailto:benhiggins90@gmail.com">
-      <svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm10 7L2 6v12h20V6l-10 5z"/></svg>
       Email
     </a>
 
@@ -214,6 +216,7 @@ function openLightbox(src) {
   document.getElementById("lightbox-img").src = src;
   document.getElementById("lightbox").style.display = "flex";
 }
+
 function closeLightbox() {
   document.getElementById("lightbox").style.display = "none";
 }
