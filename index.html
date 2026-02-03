@@ -47,6 +47,7 @@ img {
   width: 100%;
   border-radius: 4px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .button {
@@ -65,6 +66,36 @@ img {
   text-align: center;
   padding: 20px;
 }
+
+/* LIGHTBOX STYLES */
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+#lightbox img {
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 6px;
+}
+
+#lightbox:after {
+  content: "✕";
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
 </style>
 </head>
 
@@ -77,42 +108,10 @@ img {
 
 <section>
 
-<!-- SERVICES OVERVIEW CARD -->
+<!-- SERVICES OVERVIEW -->
 <div class="box">
   <h2>Services We Offer</h2>
-  <img src="services.png" alt="Services we offer">
-</div>
-
-<!-- WINDOW CLEANING -->
-<div class="box">
-  <h2>Window Cleaning</h2>
-  <p>
-    Professional window cleaning for homes and businesses across Kent and London.
-    Available for one-off cleans or regular maintenance. Suitable for homeowners,
-    landlords and commercial properties.
-  </p>
-  <img src="window-prices-houses.png" alt="Window cleaning graphic card">
-</div>
-
-<!-- GARDENING -->
-<div class="box">
-  <h2>Gardening & Maintenance</h2>
-  <p>
-    Gardening and outdoor maintenance including garden tidy-ups, lawn care,
-    hedge trimming and general upkeep. Available for one-off jobs or ongoing
-    maintenance visits.
-  </p>
-  <img src="gardening-prices.png" alt="Gardening services graphic card">
-</div>
-
-<!-- REMOVALS -->
-<div class="box">
-  <h2>Removals & Clearances</h2>
-  <p>
-    Removals and property clearances with a van and two people. Ideal for house
-    moves, flat moves and larger clear-out jobs. Priced by half-day or full day.
-  </p>
-  <img src="removals.png" alt="Removals service graphic card">
+  <img src="services.png" onclick="openLightbox(this.src)">
 </div>
 
 <!-- PROPERTY MANAGEMENT -->
@@ -121,9 +120,37 @@ img {
   <p>
     Property checks, key-holding and access visits for landlords and property
     owners who need a reliable local contact to look after their property.
-    Available as pay-as-you-go or regular packages.
   </p>
-  <img src="property-management-prices.png" alt="Property management graphic card">
+  <img src="property-management-prices.png" onclick="openLightbox(this.src)">
+</div>
+
+<!-- WINDOW CLEANING -->
+<div class="box">
+  <h2>Window Cleaning</h2>
+  <p>
+    Professional window cleaning for homes and businesses across Kent and London.
+    Available for one-off cleans or regular maintenance.
+  </p>
+  <img src="window-prices-houses.png" onclick="openLightbox(this.src)">
+</div>
+
+<!-- GARDENING -->
+<div class="box">
+  <h2>Gardening & Maintenance</h2>
+  <p>
+    Gardening and outdoor maintenance including garden tidy-ups, lawn care,
+    hedge trimming and general upkeep.
+  </p>
+  <img src="Gardening.png" onclick="openLightbox(this.src)">
+</div>
+
+<!-- REMOVALS -->
+<div class="box">
+  <h2>Removals & Clearances</h2>
+  <p>
+    Removals and property clearances with a van and two people.
+  </p>
+  <img src="removals.png" onclick="openLightbox(this.src)">
 </div>
 
 <!-- CONTACT -->
@@ -141,6 +168,22 @@ img {
 <div class="footer">
   © Higgins Property Services | Kent & London
 </div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<script>
+function openLightbox(src) {
+  document.getElementById("lightbox-img").src = src;
+  document.getElementById("lightbox").style.display = "flex";
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
 
 </body>
 </html>
